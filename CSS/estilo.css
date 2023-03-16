@@ -1,0 +1,104 @@
+/*Limpar formatações padrões*/
+ /* asteristico seleciona TUDO*/
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ body {
+   font-size: 1em; /*16 pixels*/
+   font-family: "Trebuchet MS", Helvetica, sans-serif;
+   background: #e6e6e6;
+ }
+ /***********LAYOUT********************/
+ #area-cabecalho {
+   background-color: rgb(250, 134, 154);
+   padding: 15px;
+   text-align: center;
+ }
+ #area-logo, #area-menu {
+    padding: 10px;
+ }
+ #area-principal {
+    width: 920px;  /*largura padrao para dispositivos novos*/
+    margin: 0 auto;  /*definindo a margem como automatica nas laterais*/
+    padding: 15px;
+  }
+ #area-postagens {
+    width: 660px;
+    float: left;
+ }
+ #area-lateral {
+    width: 240px;
+    float: right;  /*flutuar a direita*/
+ }
+
+ .postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+ }
+ .conteudo-lateral {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+ }
+ .postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+ }
+ #rodape {
+    clear: both; /*remover o fluxo de elementos flutuantes*/
+    text-align: center;
+    padding: 15px;
+    background: #CCC;
+ }
+ /*FORMATAÇÕES DO MENU*/
+
+a { /*para todos os links, independentes do estado*/
+    text-decoration: none;
+ }
+a:link, a:visited { 
+  color: rgb(250, 134, 154);
+}
+a:hover {
+  background-color: gainsboro;
+  padding: 2px;
+}
+#area-cabecalho a:link, #area-cabecalho a:visited {  /*o id aqui nos link são os seletores para conseguir definir que a formatação seja aplicada apenas nessa area de cabecalho*/
+    color: #FFF;
+    padding: 8px 12px; /*8px superior e 12px nas laterais*/
+}
+#area-cabecalho a:hover {
+    color: rgb(250, 134, 154);
+    background: #FFF;
+}
+
+ /*********FORMATAÇÕES GERAIS********/
+ h1 {
+    color: #726c6c;
+    font-size: 2.5em;
+ }
+ h2 {
+    color: rgb(250, 134, 134);
+ }
+ h3 {
+    color: #565656;
+    background: rgb(250, 134, 134);
+    padding: 5px;
+ }
+ .branco { /*classe*/
+    color:whitesmoke;
+  }
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+.texto-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+}
